@@ -1,64 +1,108 @@
 * {
     box-sizing: border-box;
 }
+h1,.h2, h3, h4, h5, h6 {
+    margin: 0;
+}
 img {
     max-width: 100%;
     height: 100%;
 }
-.card {
-    width: 200px;
-    height: 250px;
+.player-profile {
+    width: 400px;
+    height: 460px;
     border: 2px solid #f8b500;
     background: #393e46;
+    margin: 0 auto;
 }
-.image {
-    height: 170px;
+.statistics {
+    height: 330px;
     border-bottom: 2px solid  #f8b500;
     position: relative;
-    padding-top: 40px;
+    padding-top: 70px;
 
 }
-.b-card  {
+.rating-card  {
+    display: flex;
     position: absolute;
     top: 10px;
     left: 0;
     width: auto;
-    padding: 15px 0px;
+    padding: 5px 0px;
     background: #f8b500;
     z-index: 1;
-    width: 60px;
-
-    border-top-right-radius: 50%;
-    border-bottom-right-radius: 50%;
+    width: 120px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
-.bw-card {
+.bowling-rating {
     right: 0;
+    justify-content: flex-end;
     left: auto;
     border-radius: 0;
-    border-top-left-radius: 50%;
-    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
 }
 
-.p-i {
-    width: 100px;
-    height: 110px;
-    border: 2px solid #f9e9a2;
-    border-radius: 50%;
+.player-image__container {
+    width: 210px;
+    height: 210px;
     margin: 0 auto;
+    position: relative;
+}
+
+.player-image__player-type {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    bottom: -25px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    padding: 10px;
+    transform: translateX(-50%);
+    background-color: #f8b500;
+    border: 2px solid #000;
+}
+
+.player-image {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #f8b500;
+    border-radius: 50%;
     overflow: hidden;
 }
-.details {
+.player-details {
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
 }
-h1,.h2, h3, h4, h5, h6 {
-    margin: 0;
+.player-name {
+    font-size: 26px;
+    margin-bottom: 20px;
 }
-h5 {
-    margin-bottom: 10px;
+.price {
+    font-size: 22px;
+}
+.rating {
+    width: 26px;
+    height: 26px;
+    margin: 0px 4px;
 }
 
-.rating {
-    width: 10px;
+.carousel-container {
+    position: relative;
+    height: 100vh;
+    background-color: #666666;
+}
+
+.carousel-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.carousel-indicators {
+    display: none !important;
 }
